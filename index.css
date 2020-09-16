@@ -1,0 +1,69 @@
+.login{ width:300px;
+            background-color: #800080;
+            margin:10;
+            padding:10;
+	        padding-top: 10px;
+	        padding-bottom: 10px;
+            border-radius:20px;
+            justify-content: center;
+	        text-align: center;
+		    
+}
+
+.btnlogin,.btnca{
+	height: 30px;
+	border-radius: 10px;
+	color: white;
+	background-color: #6B0377;
+}
+
+.login_p{color:white;
+                font-weight:bold;
+                font-size:1.5em;;
+                text-align: center;}
+
+.eop, .password_login{ border-radius:4px;
+width: 240px;
+height:20px;}
+
+.bg-modal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	position:absolute;
+	top:0;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.modal-content{
+	width: 300px;
+	height:450px;
+	background-color:#800080;
+	border-radius: 4px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+    display:flex;
+    justify-content: center;}
+
+.button{background-color: blueviolet;
+        padding: 5px;
+        border-radius: 15px;
+        text-color:white;}
+
+#fn_ca, #ln_ca, #em_ca, #pn_ca,#cnp_ca, .ca_p{width:80%;
+       display: block;
+       margin: 15px auto;}
+
+.close{position: absolute;
+       top:0;
+       right: 14px;
+       font-size: 42px;
+       transform: rotate(45deg);
+	   cursor: point;}
+#h3_ca{
+	color: white;
+	
+}
+label{color:white;}

@@ -1,18 +1,47 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Clz</title>
-<link type="stylesheet" rel="index.css">
-<script></script>
+<link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
 </head>
 <body>
-<div class="login">
-<p class="login_p">Log in Helre</p>
-<form>
-<input class="eop" type="Text" placeholder="Email or Phone number">
-<input class="password_login" type="password" placeholder="Password">
 
+<div class="login"  >
+<p class="login_p"> &nbsp; Log in Here</p>
+<form>
+<input class="eop" type="Text" placeholder="Email or Phone number"><br><br>
+<input class="password_login" type="password" placeholder="Password">
+<br><br>
+<input type="submit" class="btnlogin" id="btn_login" value="Log in"><br><br>
+<input type="button" class="btnca" id="btn_ca" value="Create Account" onclick="open()">
 </form>
 </div>
+	<div class="bg-modal">
+	<div class="modal-content">
+		<div class="close">+</div>
+		<form action="">
+			<h3 class="ca" id="h3_ca">Create Account</h3>
+		<input type="text" class="ca" placeholder="First Name" id="fn_ca">
+		<input type="text" class="ca" placeholder="Last Name" id="ln_ca">
+		<input type="text" class="ca" placeholder="E-mail" id="em_ca">
+		<input type="text" class="ca" placeholder="Phone number" id="pn_ca">
+		<input type="password" class="ca_p" placeholder="Password" id="p_ca">
+		<input type="text" class="ca" placeholder="Confirm password" id="cnp_ca">
+		<input type="checkbox" class="ca" id="sp_ca"><label>Show password</label>
+		<br><br>
+			<label>Gender </label><select class="ca" id="Gender_ca">
+			<option></option>
+			<option >Male</option>
+			<option>Female</option>
+			</select><br><br>
+		<label>Select your account type here...</label><br>
+	
+			<label>Teacher</label><input type="radio" class="ca"><br>
+			<label>Student</label><input type="radio" class="ca"><br><br>
+			<input type="submit" value="Create account">
+		</form>
+		</div>
+	</div>
 </body>
 </html>
