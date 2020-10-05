@@ -21,12 +21,17 @@
 }
 
 .search{
-width:300px;
+width:100px;
 padding: 5px;
 border-radius: 10px;
 border: none;
 border: 1px solid black;
 font-size: 17px;
-text-align: center;
+text-align: left;
 margin-top: 15px;
+transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+  width: 500px;
+  
 }

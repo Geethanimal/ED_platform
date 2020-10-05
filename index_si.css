@@ -13,8 +13,7 @@ background-size: 100%;
 }
 .eop,.lgp{
 	position: absolute;
-	margin-left:50px;
-	margin-top:20px;
+	
 	background-color: none;
 	height: 50px;
 	display: block;
@@ -22,19 +21,17 @@ background-size: 100%;
 }
 .eop{
     width: 271px;
+	margin-top: 20px;
+	margin-left:30px;
 }
 .lgp{
-    position: absolute;
     width: 252px;
     float: right;
-    left: 972px;
-    top: 79px;
-	margin-left: 10%;
-	margin-top: 2%;
+	margin-top: 20px;
+	margin-left:430px;
 }
 .eop_label,.lgp_label{
     position: absolute;
-    width : 247px;
     top: 0px;
     left: -2px;
     font-size: 20px;
@@ -44,19 +41,20 @@ background-size: 100%;
     margin-top: 23px;
     margin-left: 3px;
 }
-.eop_label{
-    width: 271px;
+.eop_label,.eop_t{
+    width: 400px;
 }
 .lgp_label{width:  247px;}
 .eop_t,.lgp_t{
 	border:0;
 	border-bottom: 3px solid #fff;
 	background: transparent;
-	width: 255px;
 	font-size: 20px;
 	color:white;
 	margin-top: 24px;
 }
+.eop_t{width:360px;}
+.lgp_t{width: 200px;}
 .eop_t:focus,.lgp_t:focus{
 	border: none;
 	outline: none;
@@ -82,7 +80,7 @@ background-size: 100%;
    justify-content: center;
    align-items: center;
    top: 50%;
-   margin-left:10%;
+   margin-left:300px;
 }
 /*style Login button and label*/
 .btnlogin{
