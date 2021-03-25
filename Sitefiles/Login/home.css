@@ -1,0 +1,82 @@
+:root{
+    /*primary colors*/
+    --primary-dg:#1E352F;
+    --primary-mg:#2D4A42;
+    --primary-lg:#35574D;
+    --primary-w:#FFFFFF;
+
+    --secondary-gra:#858585;
+    --secondary-lg:#14CC0E;
+
+    --accent-ora:#FF8C00;
+    --accent-red:#FF0606;
+    --accent-bl:#1A82F9;
+
+    /*hover colors*/
+    --primary-dg-hover:#142420;
+    --primary-mg-hover:#233A34;
+    --primary-lg-hover:#2D4941;
+    --primary-w-hover:#F2F0F0;
+
+    --secondary-gra-hover:#666565;
+    --secondary-lg-hover:#10880C;
+
+    --accent-ora-hover:#B76500;
+    --accent-red-hover:#A00505;
+    --accent-bl-hover:#124D90;
+
+    /*Disabled colors*/
+    --primary-dg-dis:#2B3533;
+    --primary-mg-dis:#3A4945;
+    --primary-lg-dis:#4D5855;
+    --primary-w-dis:#E1DEDE;
+
+    --secondary-gra-dis:#5E5C5C;
+    --secondary-lg-dis:#82C580;
+
+    --accent-ora-dis:#FEC279;
+    --accent-red-dis:#FC7878;
+    --accent-bl-dis:#7FB9FA;
+}
+body{
+    
+    background-image: url(background1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--primary-w);
+}
+.login_btn ,.ca_btn{
+padding: 2px;
+border-radius: 25px;
+}
+.login_btn{
+    background-color:var(--secondary-lg);
+    
+}
+.login_btn:hover{
+    background-color:var(--secondary-lg-hover);
+    cursor: pointer;
+}
+.ca_btn{
+    background-color:var(--accent-bl);
+}
+.ca_btn:hover{
+    background-color:var(--accent-bl-hover);
+    cursor: pointer;
+}
+.login_btn>h2,.ca_btn>h2{
+    text-align: center;
+    color:var(--primary-w);
+}
+h2{text-align: center;color: var(--primary-w);}
+#btn_row1{
+    margin-top: 440px;  
+}
+#mid_row{
+    margin-top: 20px;
+}
+#btn_row2{
+    margin-top: 20px;  
+}
