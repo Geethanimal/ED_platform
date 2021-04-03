@@ -47,17 +47,23 @@ body{
     background-position: center;
     background-color: var(--primary-w);
 }
-.login_btn ,.ca_btn{
+
+/*Log in buttons and create account buttons*/
+.login_btn , .login_btn2 ,.ca_btn{
 padding: 2px;
 border-radius: 25px;
 }
-.login_btn{
+.login_btn , .login_btn2{
     background-color:var(--secondary-lg);
     
 }
-.login_btn:hover{
+.login_btn:hover ,.login_btn2:hover{
     background-color:var(--secondary-lg-hover);
     cursor: pointer;
+}
+.or{
+    text-align: center;
+    color: var(--primary-w);
 }
 .ca_btn{
     background-color:var(--accent-bl);
@@ -66,11 +72,24 @@ border-radius: 25px;
     background-color:var(--accent-bl-hover);
     cursor: pointer;
 }
-.login_btn>h2,.ca_btn>h2{
+.login_btn>h2, .login_btn2>h2, .ca_btn>h2{
     text-align: center;
     color:var(--primary-w);
+    
 }
-h2{text-align: center;color: var(--primary-w);}
+
+/*Login modal(Overriding)*/
+#or_mc{
+    border-color: var(--secondary-lg);
+    border-width: 3px;
+    
+
+}
+#LoginModal{
+    margin-top: 164px;
+}
+
+/* 1st row of modal*/
 #btn_row1{
     margin-top: 440px;  
 }
@@ -79,4 +98,33 @@ h2{text-align: center;color: var(--primary-w);}
 }
 #btn_row2{
     margin-top: 20px;  
+}
+
+/* seccound row of modal*/
+.row_2{
+    margin-top: 10px;
+}
+
+#LoginModal>h2{text-align: center;
+            color: var(--primary-w);
+            
+}
+
+/*login modal elements*/
+/* modal title overridding*/
+
+/*input fields*/
+/*email or phone numbers*/
+/*Over riding*/
+#lg_pn{
+    border: none;
+}
+/*Over ridding ca*/
+#or_ca{
+    border-color: var(--accent-bl);
+    border-width: 3px;
+}
+/*Create account modal row*/
+.ca_m_row{
+margin-top: 216px;
 }

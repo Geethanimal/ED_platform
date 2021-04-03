@@ -1,11 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-edu</title>
-    <link rel="stylesheet" href="home.css">
+
+<title>E-edu</title>
+
+<!--External css-->
+<link rel="stylesheet" href="home.css">
+
+                       <!--Boostrap4 CDN-->
+
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -17,25 +26,136 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
+
 <body>
+
+    <!--Login and create Account buttons-->
     <div class="container-fluid">
         <div id="btn_row1" class="row">
-            <div class="col-4"></div>
-            <div class="col-4"><div class="login_btn"><h2 href="">Log in</h2></div></div>
-            <div class="col-4"></div> 
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"><div class="login_btn"><h2 href="" data-toggle="modal" data-target="#LoginModal">Log in</h2></div></div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div> 
         </div>
         <div class="container-fluid"></div>
         <div id="mid_row" class="row">
-            <div class="col-4"></div>
-            <div class="col-4"><h2>Or</h2></div>
-            <div class="col-4"></div> 
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"><h2 class="or">--- Or ---</h2></div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div> 
         </div>
         <div id="btn_row2" class="row">
-            <div class="col-4"></div>
-            <div class="col-4"><div class="ca_btn"><h2 href="">Create a new account</h2></div></div>
-            <div class="col-4"></div> 
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"><div class="ca_btn"><h2 href="" data-toggle="modal" data-target="#myModal">Create a new account</h2></div></div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div> 
         </div>
     </div>
+
+  <!-- The Modal Create an Account -->
+    <div class="modal" id="myModal">
+      <div class="container-fluid">
+         <div class="row ca_m_row">
+             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+               <div id="or_ca" class="modal-content">
+  
+        <!-- CA Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Create a new Account here</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+        <!-- CA Modal body -->
+                  <div class="modal-body">
+                    <form>
+                      <h6>Select Your Account Type</h6>
+                      <div class="container-fluid">
+                         <div class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"><input type="radio" id="student" class="" name="type"/><label>Student</label></div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"><input type="radio" id="teacher" class="" name="type"/><label>Teacher</label></div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"><input type="radio" id="organisation" class="" name="type"/><label>Organisation</label></div>
+              
+                         </div>
+              
+                      <hr>
+                         <div class="row">
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="text" id="" class="form-control " placeholder="First Name"/></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="text" id="" class="form-control" placeholder="Last Name"/></div>
+                         </div>
+                         <div class="row">
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="tel" id="" class="form-control" placeholder="Phone number"/></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="email" id="" class="form-control" placeholder="E-mail"/></div>
+                         </div>
+                         <div class="row">
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="password" id="" class="form-control" placeholder="Password"/></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="password" id="" class="form-control" placeholder="Confirm Password"/></div>
+                         </div>
+                         <div class="row">
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="date" id="" class="form-control"/></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><select id="" class="form-control"><option>Gender</option><option>Male</option><option>Female</option></select></div>
+                         </div>
+                     </div>
+                  </form>
+                </div>
+  
+        
+  
+                 </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+          </div>
+      </div>
+     <div class="row row_2">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"><div class="ca_btn"><h2 href="">Create Account</h2></div></div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+     </div>
+   </div>
+
+    <!-- The Login Modal-->
+   <div class="modal" id="LoginModal">
+     <div class="container-fluid">
+        <div class="row">
+           <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+           <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+   
+               <div class="modal-content" id="or_mc">
+    
+        
+
+        <!-- Modal Header -->
+                  <div class="modal-header">
+                     <h2 id="modal-title" class="modal-title">Log in</h2>
+                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+  
+        <!-- Modal body -->
+                   <div class="modal-body">
+                     <form>
+                        <div class="form-group"><input id="lg_pn" class="lg_pn form-control" type="text" placeholder="Phone Number"/></div>
+                        <div class="form-group"><input class="lg_pw form-control" type="password" placeholder="Password"/></div>
+                        <div class="form-group form-check"><input class="lg_cb form-check-input" type="checkbox"/><label class="form-check-label">Show Password</label>
+                     </form>
+                   </div>
+ 
+                </div>
+
+             </div>
+             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+
+        </div>
+      
+      </div>
+
+      <div class="row row_2">
+         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"><div class="login_btn2"><h2 href="">Log in</h2></div></div>
+         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
+      </div>
+
+    </div>
+
+
+
 </body>
 </html>
