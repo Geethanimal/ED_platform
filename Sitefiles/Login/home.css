@@ -38,7 +38,8 @@
     --accent-red-dis:#FC7878;
     --accent-bl-dis:#7FB9FA;
 }
-body{
+
+/*body{
     
     background-image: url(background1.png);
     background-repeat: no-repeat;
@@ -46,7 +47,17 @@ body{
     background-size: cover;
     background-position: center;
     background-color: var(--primary-w);
+}*/
+.bg{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
 
 /*Log in buttons and create account buttons*/
 .login_btn , .login_btn2 ,.ca_btn{
@@ -67,12 +78,20 @@ border-radius: 25px;
 }
 .ca_btn{
     background-color:var(--accent-bl);
+    text-align: center;
+    color:var(--primary-w);
+    font-size: 1.5em;
+    font-weight: bolder;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
 }
 .ca_btn:hover{
     background-color:var(--accent-bl-hover);
     cursor: pointer;
 }
-.login_btn>h2, .login_btn2>h2, .ca_btn>h2{
+.login_btn>h2, .login_btn2>h2, .ca_btn>h2 , .re_btn>h4{
     text-align: center;
     color:var(--primary-w);
     
@@ -86,18 +105,18 @@ border-radius: 25px;
 
 }
 #LoginModal{
-    margin-top: 164px;
+    margin-top: 110px;
 }
 
 /* 1st row of modal*/
 #btn_row1{
-    margin-top: 440px;  
+    padding-top: 440px;  
 }
 #mid_row{
-    margin-top: 20px;
+    padding-top: 20px;
 }
 #btn_row2{
-    margin-top: 20px;  
+    padding-top: 20px;  
 }
 
 /* seccound row of modal*/
@@ -116,15 +135,148 @@ border-radius: 25px;
 /*input fields*/
 /*email or phone numbers*/
 /*Over riding*/
-#lg_pn{
-    border: none;
+body.modal-open .a{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
 }
+#lg_pn , #lg_pw{
+    padding: 10px 0;
+    margin-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius:0;
+    border-bottom: 2px solid var(--secondary-gra);
+}
+.input_pn_lbl{
+    margin-top: 11px;
+    color:var(--secondary-gra);
+}
+.input_p_lbl{
+    margin-top: -61px;
+    color:var(--secondary-gra);
+}
+.input_pn_lbl,.input_p_lbl{
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    margin-left: 16px;
+    transition: .5s;
+}
+#lg_pn:focus~.input_pn_lbl,
+#lg_pn:valid~.input_pn_lbl
+{
+    margin-top:-18px;
+    left: 0;
+    margin-left: 16px;
+    color:var(--secondary-lg);
+    font-weight: bold;
+    
+}
+#lg_pw:focus~.input_p_lbl,
+#lg_pw:valid~.input_p_lbl{
+    margin-top:-93px;
+    left: 0;
+    margin-left: 16px;
+    color:var(--secondary-lg);
+    font-weight: bold;
+}
+#lg_pn:focus ,
+#lg_pw:focus,
+#lg_pn:valid,
+#lg_pw:valid{
+    border-radius:0;
+    border-bottom: 2px solid var(--secondary-lg);
+}
+
+
 /*Over ridding ca*/
+
 #or_ca{
     border-color: var(--accent-bl);
     border-width: 3px;
 }
+
 /*Create account modal row*/
-.ca_m_row{
-margin-top: 216px;
+#ca_m{
+margin-top: 150px;
+}
+
+/* Ca modal inputs*/
+#student,#teacher,#organisation{
+    margin-right:5px;
+}
+#lbl_f_s:hover , #lbl_f_t:hover , #lbl_f_o:hover,#student,#teacher,#organisation {
+    cursor: pointer;
+}
+#ca_form textarea,#ca_form input,#ca_form select{
+    margin-top: 10px;
+}
+
+#f_name,#L_name,#p_num,#E_mail,#pw,#c_pw,#dob,#gen,#o_name,#o_add,#m_ids,#o_type{
+    border-radius: 25px;
+    border-color: var(--secondary-gra);
+}
+#f_name:focus{
+    outline: none;
+}
+/*organisation details div*/
+#ord{
+    display: none;
+}
+
+
+/* Confirm model*/
+/* Resend code btn*/
+.re_btn{
+    background-color: var(--accent-red);
+    border-radius: 25px;
+}
+.re_btn:hover{
+    background-color: var(--accent-red-hover);
+    color: var(--primary-w-hover);
+    cursor: pointer;
+}
+/*confirm model back button*/
+.bk_cf_btn{
+    background-color: var(--secondary-lg);
+    color: var(--primary-w);
+    border-radius: 200px;
+    text-align: center;
+}
+.bk_cf_btn:hover{
+    background-color: var(--secondary-lg-hover);
+    color: var(--primary-w-hover);
+    cursor: pointer;
+}
+/* confirm model text*/
+.cf_text{
+text-align: center;
+}
+/*Confirm button*/
+.btn_confirm{
+    background-color: var(--secondary-lg);
+    color: var(--primary-w);
+    border-radius: 25px;
+    text-align: center;
+}
+.btn_confirm:hover{
+    background-color: var(--secondary-lg-hover);
+    color: var(--primary-w-hover);
+    cursor: pointer;
+}
+/*Help button*/
+#h_btn_row svg{
+    position: absolute;
+    right:0px;
+}
+#h_btn_t_row {
+    margin-top: 80px;
+    text-align: right;
+    color: var(--primary-w);
 }

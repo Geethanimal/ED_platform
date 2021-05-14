@@ -12,6 +12,8 @@
 
 <!--External css-->
 <link rel="stylesheet" href="home.css">
+<!--External js-->
+<script src="home.js"></script>
 
                        <!--Boostrap4 CDN-->
 
@@ -30,7 +32,7 @@
 </head>
 
 <body>
-
+<div class="bg a">
     <!--Login and create Account buttons-->
     <div class="container-fluid">
         <div id="btn_row1" class="row">
@@ -46,15 +48,98 @@
         </div>
         <div id="btn_row2" class="row">
             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
-            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"><div class="ca_btn"><h2 href="" data-toggle="modal" data-target="#myModal">Create a new account</h2></div></div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"><div class="ca_btn"><h2 href="" data-toggle="modal" data-target="#myModal">Create an Account</h2></div></div>
             <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div> 
         </div>
+        <div id="h_btn_row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12"><button type="button" data-toggle="modal" data-target="#helpModal"><svg xmlns="http://www.w3.org/2000/svg" width="96" height="73.64" viewBox="0 0 96 73.64">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #ff8c00;
+                }
+              </style>
+            </defs>
+            <path id="Icon_simple-hipchat" data-name="Icon simple-hipchat" class="cls-1" d="M78.944,61.173s.412-.24,1.068-.65C89.84,54.283,96,45.236,96,35.175,96,16.408,74.508,1.181,48.012,1.181S0,16.408,0,35.175,21.484,69.182,47.992,69.182a66.74,66.74,0,0,0,10.1-.749l1.048-.148c6.732,3.586,16.556,6.535,25.152,6.535,2.66,0,3.912-1.793,2.208-3.625C83.9,68.585,80.332,64.4,78.944,61.173ZM73.1,46.31C70.232,49.821,61.36,55.8,48.08,55.8H47.9c-13.312,0-22.172-6.013-25.016-9.487a3.5,3.5,0,0,1-1.092-1.885A1.742,1.742,0,0,1,23.576,42.7a.257.257,0,0,1,.084-.01,2.9,2.9,0,0,1,1.312.365A41.732,41.732,0,0,0,47.988,49.8a40.187,40.187,0,0,0,23.04-6.761,2.083,2.083,0,0,1,1.252-.4,1.789,1.789,0,0,1,1.932,1.56,3.969,3.969,0,0,1-1.072,2.112H73.1Z" transform="translate(0 -1.181)"/>
+            </svg></button></div>
+        </div>
+        <div id="h_btn_t_row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12"><h4>Help</h4></div>
+        </div>
     </div>
+  </div>
+
+      <!-- The help Modal -->
+<div class="modal" id="helpModal">
+  <div class="modal-dialog">
+        <div class="modal-content">
+        
+        <!-- help Modal body -->
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        Modal body..
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- The Confirm Modal -->
+<div class="modal" id="ConfirmModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+     
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2"><div class="bk_cf_btn"><h5 data-toggle="modal" data-target="#myModal" data-dismiss="modal"><<</h5></div></div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6"><div class="re_btn"><h4>Resend code</h4></div></div>
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+          </div>
+          
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 cf_text">
+              <p>You will receive SMS with  eight  digit  number 
+                to  your  mobile  phone.  make  sure  to   give 
+                above the correct number of yours.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 cf_text"><p>Confirm Code:</p></div>
+          </div>
+          <div class="row">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"><input type="text" id="" class="form-control " placeholder="XXXXXXXX"/></div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <p>
+                If the code is not received, click "resend code" button to get it.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"><div class="btn_confirm"><h5 href="">Confirm</h5></div></div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- The Modal Create an Account -->
+  <form class="needs-validation" novalidate>
     <div class="modal" id="myModal">
       <div class="container-fluid">
-         <div class="row ca_m_row">
+         <div id="ca_m" class="row ca_m_row">
              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
              <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                <div id="or_ca" class="modal-content">
@@ -67,36 +152,51 @@
   
         <!-- CA Modal body -->
                   <div class="modal-body">
-                    <form>
+                    
                       <h6>Select Your Account Type</h6>
-                      <div class="container-fluid">
-                         <div class="row">
-                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"><input type="radio" id="student" class="" name="type"/><label>Student</label></div>
-                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"><input type="radio" id="teacher" class="" name="type"/><label>Teacher</label></div>
-                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"><input type="radio" id="organisation" class="" name="type"/><label>Organisation</label></div>
+                      <div id="ca_form" class="container-fluid">
+                         <div id="ca_cb" class="row">
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"><label id="lbl_f_s" data-toggle="popover" title="Click if you are a Student"><input type="radio" id="student" class="" name="type" value="student" onclick="ShowHide()" required/>Student</label></div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"><label id="lbl_f_t" data-toggle="popover" title="Click if you are a Teacher"><input type="radio" id="teacher" class="" name="type" value="teacher" onclick="ShowHide()" required/>Teacher</label></div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4"><label id="lbl_f_o" data-toggle="popover" title="Click if you are going to start Educational Organisation"><input type="radio" id="organisation" class="" name="type" value="organisation" onclick="ShowHide()" required/>Organisation</label></div>
               
                          </div>
               
                       <hr>
                          <div class="row">
-                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="text" id="" class="form-control " placeholder="First Name"/></div>
-                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="text" id="" class="form-control" placeholder="Last Name"/></div>
+                          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12"> User details</div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="text" id="f_name" class="form-control " placeholder="First Name" data-toggle="popover" title="Enter your First Name Eg: Kamal" required/></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="text" id="L_name" class="form-control" placeholder="Last Name" data-toggle="popover" title="Enter your Last Name Eg: Kamal" required/></div>
                          </div>
                          <div class="row">
-                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="tel" id="" class="form-control" placeholder="Phone number"/></div>
-                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="email" id="" class="form-control" placeholder="E-mail"/></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="tel" id="p_num" class="form-control" placeholder="Phone number" data-toggle="popover" title="Enter your Phone number Eg: +947X XXXXXXX" required/></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="email" id="E_mail" class="form-control" placeholder="E-mail" data-toggle="popover" title="Enter your Email Address(optional) Eg: kkumara@edu.com" required/></div>
                          </div>
                          <div class="row">
-                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="password" id="" class="form-control" placeholder="Password"/></div>
-                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="password" id="" class="form-control" placeholder="Confirm Password"/></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="password" id="pw" class="form-control" placeholder="Password" data-toggle="popover" title="Enter your Password (more than 8 charactors including numbers or symboles)" required/></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="password" id="c_pw" class="form-control" placeholder="Confirm Password" data-toggle="popover" title="Re-Enter your Password" required/></div>
                          </div>
                          <div class="row">
-                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="date" id="" class="form-control"/></div>
-                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><select id="" class="form-control"><option>Gender</option><option>Male</option><option>Female</option></select></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="date" id="dob" class="form-control" data-toggle="popover" title="Enter your Date of birth" required/></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><select id="gen" class="form-control" data-toggle="popover" title="Select your Gender" required><option>Gender</option><option>Male</option><option>Female</option></select></div>
                          </div>
+                         <div id="ord" class="row">
+                           <div class="col-12"><hr></div>
+                           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12"> Organisation details</div>
+                           <div class="row">
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="text" id="o_name" class="form-control" placeholder="Organisation Name" required/></div>
+                           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><input type="text" id="o_add" class="form-control" placeholder="Organisation Address" required/></div>
+                          </div>
+                          <div class="row">
+                          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><textarea type="text" id="m_ids" class="form-control" placeholder="Add 10 member ides" required></textarea></div>
+                          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6"><select id="o_type" class="form-control" required><option>Organisation type</option><option>Univercity</option><option>School</option><option>Tution class</option></select></div>
+                          </div>
+                        
+                        </div>
                      </div>
-                  </form>
+                  
                 </div>
+                
   
         
   
@@ -107,10 +207,11 @@
       </div>
      <div class="row row_2">
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"><div class="ca_btn"><h2 href="">Create Account</h2></div></div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"><!--<div class="ca_btn" ><h2 href="" data-toggle="modal" data-target="#ConfirmModal" data-dismiss="modal">Create</h2></div>--><input type="submit" class="ca_btn" value="Create" ></div>
         <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"></div>
      </div>
    </div>
+  </form>
 
     <!-- The Login Modal-->
    <div class="modal" id="LoginModal">
@@ -130,10 +231,10 @@
                   </div>
   
         <!-- Modal body -->
-                   <div class="modal-body">
+                   <div id="lg_in"  class="modal-body ">
                      <form>
-                        <div class="form-group"><input id="lg_pn" class="lg_pn form-control" type="text" placeholder="Phone Number"/></div>
-                        <div class="form-group"><input class="lg_pw form-control" type="password" placeholder="Password"/></div>
+                        <div class="form-group"><input id="lg_pn" class="lg_pn" name="phone_number" type="text" required=""/><label class="input_pn_lbl" for="phone_number">Phone Number</label></div>
+                        <div class="form-group"><input id="lg_pw" class="lg_pw form-control" name="password" type="password" required=""/><label class="input_p_lbl" for="password">Password</label></div>
                         <div class="form-group form-check"><input class="lg_cb form-check-input" type="checkbox"/><label class="form-check-label">Show Password</label>
                      </form>
                    </div>

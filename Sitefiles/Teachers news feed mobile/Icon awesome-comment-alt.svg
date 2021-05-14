@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #858585;
+      }
+    </style>
+  </defs>
+  <path id="Icon_awesome-comment-alt" data-name="Icon awesome-comment-alt" class="cls-1" d="M63,0H9A9.008,9.008,0,0,0,0,9V49.5a9.008,9.008,0,0,0,9,9H22.5V70.308a1.691,1.691,0,0,0,2.686,1.364L42.75,58.5H63a9.008,9.008,0,0,0,9-9V9A9.008,9.008,0,0,0,63,0Z"/>
+</svg>

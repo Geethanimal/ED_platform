@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="36" viewBox="0 0 54 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #858585;
+      }
+    </style>
+  </defs>
+  <path id="Icon_material-keyboard-backspace" data-name="Icon material-keyboard-backspace" class="cls-1" d="M58.5,24H15.99L26.73,13.23,22.5,9,4.5,27l18,18,4.23-4.23L15.99,30H58.5Z" transform="translate(-4.5 -9)"/>
+</svg>
